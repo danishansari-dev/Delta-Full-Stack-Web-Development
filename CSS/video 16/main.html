@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Media Player</title>
+    <style>
+        body {
+            background: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .media-player {
+            background: #333;
+            padding: 24px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+        video, audio {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            background: #000;
+        }
+        h2 {
+            margin-bottom: 16px;
+            font-size: 1.5em;
+            color: #ffd700;
+        }
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="media-player">
+        <h2>HTML5 Media Player</h2>
+        <label for="video">Video:</label>
+        <video id="video" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <label for="audio">Audio:</label>
+        <audio id="audio" controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
